@@ -1,0 +1,32 @@
+.jumbotron {
+        background-color: slategray;
+        color: white;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-header {
+    background-color: rgb(87, 139, 190);
+   font-weight: 600;
+   font-size: larger;
+   font-family: 'Times New Roman', Times, serif;
+   color: white;
+}
+
+.card-body {
+    background-color: white;
+   
+}
+
+body {
+    background-color: lightgray;
+}
+
+.container {
+    padding: 10px;
+}

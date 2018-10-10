@@ -7,7 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Moment JS-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <title>Train Scheduler</title>
   </head>
   <body>
@@ -25,31 +27,45 @@ Users from many different machines must be able to view same train times.
 Styling and theme are completely up to you. Get Creative!
                -->
   <div class="container">
+      <div class="card currenttrain">
+          <div class="card-header">
+            Current Train Schedule
+          </div>
+          <div class="card-body">
     <table class="table">
             <thead class="thead-dark">
               <tr>
                 
                 <th scope="col">Train Name</th>
                 <th scope="col">Destination</th>
-                <th scope="col">Frequency</th>
+                <th scope="col">Frequency (min)</th>
                 <th scope="col">Next Arrival</th>
                 <th scope="col">Minutes Away</th>
-               
-              </tr>
+                
+            </tr>
             </thead>
             <tbody id="trainTable">
-              
+                  <tr>
+                    <td>Choo Choo Caravan</td>
+                    <td>Funkytown</td>
+                    <td>Always</td>
+                    <td>Now!</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr id="newTrain"></tr>
             </tbody>
           </table>
-          
+          </div>
+        </div>
+        </div>  
          
-
-          <div class="card">
+        <div class="container">
+          <div class="card addtrain">
                 <div class="card-header">
                   Add Train
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
+
                   <form>
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Train Name</label>
